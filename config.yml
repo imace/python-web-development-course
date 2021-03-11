@@ -1,0 +1,16 @@
+title: python web development
+description: python web development
+template:
+  repo: python-web-development-template
+  name: python-web-development
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
